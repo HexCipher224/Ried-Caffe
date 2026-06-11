@@ -1,0 +1,144 @@
+[
+    {
+        "productId": 1,
+        "name": "Espresso",
+        "price": 180,
+        "stock": 60,
+        "category": "coffee"
+     },
+    {
+        "productId": 2,
+        "name": "Cappuccino",
+        "price": 220,
+        "stock": 50,
+        "category": "coffee"
+     },
+    {
+        "productId": 3,
+        "name": "Latte",
+        "price": 250,
+        "stock": 40,
+        "category": "coffee"
+     },
+    {
+        "productId": 4,
+        "name": "Americano",
+        "price": 200,
+        "stock": 70,
+        "category": "coffee"
+     },
+    {
+        "productId": 5,
+        "name": "Mocha",
+        "price": 270,
+        "stock": 30,
+        "category": "coffee"
+     },
+
+        {
+            "productId": 6,
+            "name": "Green Tea",
+            "price": 150,
+            "stock": 80,
+            "category": "tea"
+        },
+        {
+            "productId": 7,
+            "name": "Black Tea",
+            "price": 140,
+            "stock": 90,
+            "category": "tea"
+        },
+        {
+            "productId": 8,
+            "name": "Herbal Tea",
+            "price": 160,
+            "stock": 70,
+            "category": "tea"
+        },
+        {
+            "productId": 9,
+            "name": "ginger-lemon Tea",
+            "price": 170,
+            "stock": 60,
+            "category": "tea"
+        },
+        {
+            "productId": 10,
+            "name": "Chai Tea",
+            "price": 180,
+            "stock": 50,
+            "category": "tea"
+        },
+        {
+            "productId": 11,
+            "name": "Croissant",
+            "price": 120,
+            "stock": 100,
+            "category": "pastry"
+        },
+        {
+            "productId": 12,
+            "name": "Muffin",
+            "price": 110,
+            "stock": 90,
+            "category": "pastry"
+        },
+        {
+            "productId": 13,
+            "name": "Scone",
+            "price": 130,
+            "stock": 80,
+            "category": "pastry"
+        },
+        {
+            "productId": 14,
+            "name": "blackfrost cake",
+            "price": 240,
+            "stock": 70,
+            "category": "pastry"
+        },
+        {
+            "productId": 15,
+            "name": "Bagel",
+            "price": 100,
+            "stock": 60,
+            "category": "pastry"
+        },
+        {
+            "productId": 16,
+            "name": "Iced Coffee",
+            "price": 200,
+            "stock": 50,
+            "category": "cold beverage"
+        },
+        {
+            "productId": 17,
+            "name": "Iced Latte",
+            "price": 250,
+            "stock": 40,
+            "category": "cold beverage"
+        },
+        {
+            "productId": 18,
+            "name": "Iced Mocha",
+            "price": 270,
+            "stock": 30,
+            "category": "cold beverage"
+        },
+        {
+            "productId": 19,
+            "name": "Iced Americano",
+            "price": 200,
+            "stock": 70,
+            "category": "cold beverage"
+        },
+        {
+            "productId": 20,
+            "name": "Iced Chai Tea",
+            "price": 180,
+            "stock": 50,
+            "category": "cold beverage"
+        }
+
+]
