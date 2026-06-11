@@ -1,6 +1,6 @@
 import unittest
 
-from utils.validators import validate_payment
+from tools.validators import validate_payment
 
 
 class TestPayments(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from utils.validators import validate_name, validate_price
+from tools.validators import validate_name, validate_price
 
 
 class TestInventory(unittest.TestCase):

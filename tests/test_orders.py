@@ -1,7 +1,7 @@
 import unittest
 
-from utils.validators import validate_quantity
-from utils.helpers import calculate_change
+from tools.validators import validate_quantity
+from tools.helpers import calculate_change
 
 
 class TestOrders(unittest.TestCase):
