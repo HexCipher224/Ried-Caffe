@@ -59,5 +59,4 @@ class PaymentService:
 			result.message,
 		]
 		return "\n".join(lines)
-	
 
