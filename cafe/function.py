@@ -32,7 +32,7 @@ def update_stock():
     
     products = Product.read_all()
     for product in products:
-        if product.id == productId:
+        if product.productId == productId:
             product.stock = new_stock
     with open(Product.FILE_PATH, 'w') as file:
         import json

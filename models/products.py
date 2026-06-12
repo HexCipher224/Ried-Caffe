@@ -1,47 +1,52 @@
 import json
 
+
 class Product:
+    all_products = []
+    FILE_PATH = "data/products.json"
 
- all_products = []
- FILE_PATH = 'data/products.json'   
-
-def __init__(self, productId, name, price, stock, category):
-        self.id = productId
+    def __init__(self, productId, name, price, stock, category):
+        self.productId = productId
         self.name = name
         self.price = price
         self.stock = stock
         self.category = category
 
-Product.all_products.append(self)
+        Product.all_products.append(self)
 
-def __repr__(self):
-        return f"{self.productId} | {self.name} | KES {self.price} | stock: {self.stock})"
+    def __repr__(self):
+        return (
+            f"{self.productId} | "
+            f"{self.name} | "
+            f"KES {self.price} | "
+            f"Stock: {self.stock}"
+        )
 
-def to_dict(self):
+    def to_dict(self):
         return {
-            'productId': self.productId,
-            'name': self.name,
-            'price': self.price,
-            'stock': self.stock,
-            'category': self.category
+            "productId": self.productId,
+            "name": self.name,
+            "price": self.price,
+            "stock": self.stock,
+            "category": self.category
         }
 
-def safe_to_json(self):
-    try:
-        with open(self.FILE_PATH, 'w') as file:
-            data = json.load(file)
+    def save_to_json(self):
+        try:
+            with open(self.FILE_PATH, "r") as file:
+                data = json.load(file)
+
             data.append(self.to_dict())
-            
-        with open(self.FILE_PATH, 'w') as file:
-            json.dump(data, file, indent=4)
 
-    except Exception as e:
-        print(f"An error occurred while saving the product: {e}") 
+            with open(self.FILE_PATH, "w") as file:
+                json.dump(data, file, indent=4)
 
+        except Exception as e:
+            print(f"Error: {e}")
 
-@classmethod
-def read_all(cls):
-    with open(cls.FILE_PATH, 'r') as file:
-        data = json.load(file)
-    
-    return [Product(**item) for item in data]
+    @classmethod
+    def read_all(cls):
+        with open(cls.FILE_PATH, "r") as file:
+            data = json.load(file)
+
+        return [cls(**item) for item in data]
