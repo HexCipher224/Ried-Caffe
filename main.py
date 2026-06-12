@@ -6,6 +6,11 @@ if __name__ == "__main__":
 import sys
 
 from cli.menu import start_menu
+from services.payment_service import (
+    PaymentService,
+    PaymentResult,
+    PaymentError) 
+
 from cafe.function import (
     list_products,
     create_product,
@@ -27,6 +32,15 @@ if __name__ == "__main__":
 
     elif sys.argv[1] == "update-stock":
         update_stock()
+
+    elif sys.argv[1] == " PaymentService":
+        PaymentService()
+
+    elif sys.argv[1] == "PaymentResult":
+        PaymentResult()
+
+    elif sys.argv[1] == "PaymentError":
+        PaymentError()
 
     else:
         print("Unknown command")

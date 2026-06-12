@@ -27,9 +27,9 @@ def place_order():
     print("\n⚠ Order processing not yet connected.")
 
 
-def view_inventory():
-    print("\n===== INVENTORY =====")
-    print("Inventory not yet connected.")
+def payment_service():
+    print("\n===== Payment Service =====")
+    print("Payment not yet connected.")
 
 
 def exit_program():

@@ -1,7 +1,7 @@
 from cli.commands import (
     view_menu,
     place_order,
-    view_inventory,
+    payment_service,
     exit_program
 )
 
@@ -14,7 +14,7 @@ def start_menu():
 
         print("1. View Menu")
         print("2. Place Order")
-        print("3. View Inventory")
+        print("3. Payment service")
         print("4. Exit")
 
         choice = input("\nEnter your choice: ")
@@ -26,7 +26,7 @@ def start_menu():
             place_order()
 
         elif choice == "3":
-            view_inventory()
+            payment_service()
 
         elif choice == "4":
             exit_program()
